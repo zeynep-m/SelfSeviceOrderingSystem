@@ -1,0 +1,109 @@
+<svg width="680" viewBox="0 0 680 920" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <title>Use Case Diagram – Self-Service Ordering System</title>
+  <desc>UML use case diagram showing a Customer actor interacting with a Self-Service Ordering System containing ten use cases connected by include and extend relationships.</desc>
+
+  <defs>
+    <marker id="open" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="680" height="920" fill="#ffffff"/>
+
+  <!-- System boundary -->
+  <rect x="148" y="28" width="496" height="848" rx="14" fill="none" stroke="#aaaaaa" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="396" y="56" text-anchor="middle" font-size="14" font-weight="600" fill="#222">Self-Service Ordering System</text>
+
+  <!-- Actor: Customer -->
+  <circle cx="60" cy="316" r="16" fill="none" stroke="#555" stroke-width="1.5"/>
+  <line x1="60" y1="332" x2="60" y2="372" stroke="#555" stroke-width="1.5"/>
+  <line x1="32" y1="348" x2="88" y2="348" stroke="#555" stroke-width="1.5"/>
+  <line x1="60" y1="372" x2="36" y2="402" stroke="#555" stroke-width="1.5"/>
+  <line x1="60" y1="372" x2="84" y2="402" stroke="#555" stroke-width="1.5"/>
+  <text x="60" y="418" text-anchor="middle" font-size="13" font-weight="600" fill="#222">Customer</text>
+
+  <!-- UC1: Open application -->
+  <ellipse cx="396" cy="100" rx="108" ry="22" fill="#d1f0e6" stroke="#0f6e56" stroke-width="0.8"/>
+  <text x="396" y="104" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="#085041">Open application</text>
+
+  <!-- UC2: Browse categories -->
+  <ellipse cx="396" cy="162" rx="108" ry="22" fill="#d1f0e6" stroke="#0f6e56" stroke-width="0.8"/>
+  <text x="396" y="166" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="#085041">Browse categories</text>
+
+  <!-- UC3: View category products -->
+  <ellipse cx="396" cy="228" rx="120" ry="22" fill="#d1f0e6" stroke="#0f6e56" stroke-width="0.8"/>
+  <text x="396" y="232" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="#085041">View category products</text>
+
+  <!-- UC4: View product details -->
+  <ellipse cx="396" cy="300" rx="114" ry="22" fill="#d1f0e6" stroke="#0f6e56" stroke-width="0.8"/>
+  <text x="396" y="304" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="#085041">View product details</text>
+
+  <!-- UC5: Customize item (extend – purple) -->
+  <ellipse cx="396" cy="380" rx="136" ry="22" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+  <text x="396" y="384" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="#3C3489">Customize item with add-ons</text>
+
+  <!-- UC6: Add item to cart -->
+  <ellipse cx="396" cy="456" rx="108" ry="22" fill="#d1f0e6" stroke="#0f6e56" stroke-width="0.8"/>
+  <text x="396" y="460" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="#085041">Add item to cart</text>
+
+  <!-- UC7: View cart and total -->
+  <ellipse cx="396" cy="530" rx="114" ry="22" fill="#d1f0e6" stroke="#0f6e56" stroke-width="0.8"/>
+  <text x="396" y="534" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="#085041">View cart and total</text>
+
+  <!-- UC8: Place order -->
+  <ellipse cx="396" cy="604" rx="108" ry="22" fill="#d1f0e6" stroke="#0f6e56" stroke-width="0.8"/>
+  <text x="396" y="608" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="#085041">Place order</text>
+
+  <!-- UC9: Track order status -->
+  <ellipse cx="396" cy="678" rx="120" ry="22" fill="#d1f0e6" stroke="#0f6e56" stroke-width="0.8"/>
+  <text x="396" y="682" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="#085041">Track order status</text>
+
+  <!-- UC10: Clear cart (coral) -->
+  <ellipse cx="396" cy="752" rx="108" ry="22" fill="#FAECE7" stroke="#993C1D" stroke-width="0.8"/>
+  <text x="396" y="756" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="#712B13">Clear cart</text>
+
+  <!-- Actor association line to "Open application" -->
+  <line x1="78" y1="316" x2="282" y2="138" stroke="#888" stroke-width="1"/>
+
+  <!-- include: Browse → View category products -->
+  <line x1="396" y1="184" x2="396" y2="206" stroke="#666" stroke-width="1" stroke-dasharray="5 3" marker-end="url(#open)"/>
+  <text x="412" y="198" font-size="11" fill="#888">«include»</text>
+
+  <!-- include: View category products → View product details -->
+  <line x1="396" y1="250" x2="396" y2="278" stroke="#666" stroke-width="1" stroke-dasharray="5 3" marker-end="url(#open)"/>
+  <text x="412" y="267" font-size="11" fill="#888">«include»</text>
+
+  <!-- include: Customize → Add item to cart -->
+  <line x1="396" y1="402" x2="396" y2="434" stroke="#666" stroke-width="1" stroke-dasharray="5 3" marker-end="url(#open)"/>
+  <text x="412" y="420" font-size="11" fill="#888">«include»</text>
+
+  <!-- include: Add item → View cart -->
+  <line x1="396" y1="478" x2="396" y2="508" stroke="#666" stroke-width="1" stroke-dasharray="5 3" marker-end="url(#open)"/>
+  <text x="412" y="495" font-size="11" fill="#888">«include»</text>
+
+  <!-- include: View cart → Place order -->
+  <line x1="396" y1="552" x2="396" y2="582" stroke="#666" stroke-width="1" stroke-dasharray="5 3" marker-end="url(#open)"/>
+  <text x="412" y="569" font-size="11" fill="#888">«include»</text>
+
+  <!-- include: Place order → Track order status -->
+  <line x1="396" y1="626" x2="396" y2="656" stroke="#666" stroke-width="1" stroke-dasharray="5 3" marker-end="url(#open)"/>
+  <text x="412" y="644" font-size="11" fill="#888">«include»</text>
+
+  <!-- include: Track order status → Clear cart -->
+  <line x1="396" y1="700" x2="396" y2="730" stroke="#666" stroke-width="1" stroke-dasharray="5 3" marker-end="url(#open)"/>
+  <text x="412" y="718" font-size="11" fill="#888">«include»</text>
+
+  <!-- extend: View product details ← Customize item (right-side detour) -->
+  <path d="M532 380 L560 380 L560 300 L510 300" fill="none" stroke="#666" stroke-width="1" stroke-dasharray="5 3" marker-end="url(#open)"/>
+  <text x="548" y="342" text-anchor="middle" font-size="11" fill="#888">«extend»</text>
+
+  <!-- Legend -->
+  <rect x="155" y="836" width="460" height="34" rx="6" fill="none" stroke="#cccccc" stroke-width="0.8"/>
+  <line x1="175" y1="853" x2="215" y2="853" stroke="#666" stroke-width="1" stroke-dasharray="5 3" marker-end="url(#open)"/>
+  <text x="222" y="857" font-size="11" fill="#555">«include» required</text>
+  <line x1="340" y1="853" x2="380" y2="853" stroke="#666" stroke-width="1" stroke-dasharray="5 3" marker-end="url(#open)"/>
+  <text x="387" y="857" font-size="11" fill="#555">«extend» optional</text>
+  <ellipse cx="500" cy="853" rx="10" ry="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+  <text x="515" y="857" font-size="11" fill="#555">optional step</text>
+</svg>

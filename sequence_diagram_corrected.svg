@@ -1,0 +1,308 @@
+<svg width="1500" height="2060" viewBox="0 0 1500 2060" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <title>Sequence Diagram – Self-Service Ordering System (Corrected)</title>
+
+  <rect width="1500" height="2060" fill="#ffffff"/>
+
+  <!-- Participant columns (cx):
+       Customer=80, App=220, AppView=370, UIController=510, MenuView=640, CategoryPageView=790,
+       Cart=950, OrderManager=1090, GUIObserver=1230, TerminalObserver=1380
+  -->
+
+  <!-- Phase bands -->
+  <rect x="20" y="120" width="1460" height="270" rx="6" fill="#E1F5EE" opacity="0.5"/>
+  <text x="30" y="140" font-size="11" font-weight="600" fill="#0F6E56">BROWSE &amp; SELECT</text>
+
+  <rect x="20" y="400" width="1460" height="360" rx="6" fill="#EEEDFE" opacity="0.5"/>
+  <text x="30" y="420" font-size="11" font-weight="600" fill="#534AB7">PRODUCT DETAILS &amp; CUSTOMISE</text>
+
+  <rect x="20" y="770" width="1460" height="210" rx="6" fill="#FAECE7" opacity="0.5"/>
+  <text x="30" y="790" font-size="11" font-weight="600" fill="#993C1D">CART</text>
+
+  <rect x="20" y="990" width="1460" height="990" rx="6" fill="#E6F1FB" opacity="0.5"/>
+  <text x="30" y="1010" font-size="11" font-weight="600" fill="#185FA5">ORDER PROCESSING</text>
+
+  <!-- Participant header boxes -->
+  <!-- Customer -->
+  <rect x="30" y="30" width="100" height="34" rx="6" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.8"/>
+  <text x="80" y="51" text-anchor="middle" font-size="12" font-weight="600" fill="#2C2C2A">Customer</text>
+  <!-- App -->
+  <rect x="170" y="30" width="100" height="34" rx="6" fill="#d1f0e6" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="220" y="51" text-anchor="middle" font-size="12" font-weight="600" fill="#085041">App</text>
+  <!-- AppView -->
+  <rect x="315" y="30" width="110" height="34" rx="6" fill="#d1f0e6" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="370" y="51" text-anchor="middle" font-size="12" font-weight="600" fill="#085041">AppView</text>
+  <!-- UIController -->
+  <rect x="450" y="30" width="120" height="34" rx="6" fill="#d1f0e6" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="510" y="51" text-anchor="middle" font-size="12" font-weight="600" fill="#085041">UIController</text>
+  <!-- MenuView -->
+  <rect x="590" y="30" width="100" height="34" rx="6" fill="#d1f0e6" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="640" y="51" text-anchor="middle" font-size="12" font-weight="600" fill="#085041">MenuView</text>
+  <!-- CategoryPageView -->
+  <rect x="715" y="30" width="150" height="34" rx="6" fill="#d1f0e6" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="790" y="51" text-anchor="middle" font-size="12" font-weight="600" fill="#085041">CategoryPageView</text>
+  <!-- Cart -->
+  <rect x="900" y="30" width="100" height="34" rx="6" fill="#FAECE7" stroke="#993C1D" stroke-width="0.8"/>
+  <text x="950" y="51" text-anchor="middle" font-size="12" font-weight="600" fill="#712B13">Cart</text>
+  <!-- OrderManager -->
+  <rect x="1025" y="30" width="130" height="34" rx="6" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.8"/>
+  <text x="1090" y="51" text-anchor="middle" font-size="12" font-weight="600" fill="#0C447C">OrderManager</text>
+  <!-- GUIObserver -->
+  <rect x="1175" y="30" width="110" height="34" rx="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+  <text x="1230" y="51" text-anchor="middle" font-size="12" font-weight="600" fill="#3C3489">GUIObserver</text>
+  <!-- TerminalObserver -->
+  <rect x="1310" y="30" width="150" height="34" rx="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+  <text x="1385" y="51" text-anchor="middle" font-size="12" font-weight="600" fill="#3C3489">TerminalObserver</text>
+
+  <!-- Lifelines -->
+  <line x1="80"   y1="64" x2="80"   y2="2020" stroke="#888" stroke-width="0.8" stroke-dasharray="4 3"/>
+  <line x1="220"  y1="64" x2="220"  y2="2020" stroke="#0F6E56" stroke-width="0.8" stroke-dasharray="4 3"/>
+  <line x1="370"  y1="64" x2="370"  y2="2020" stroke="#0F6E56" stroke-width="0.8" stroke-dasharray="4 3"/>
+  <line x1="510"  y1="64" x2="510"  y2="2020" stroke="#0F6E56" stroke-width="0.8" stroke-dasharray="4 3"/>
+  <line x1="640"  y1="64" x2="640"  y2="2020" stroke="#0F6E56" stroke-width="0.8" stroke-dasharray="4 3"/>
+  <line x1="790"  y1="64" x2="790"  y2="2020" stroke="#0F6E56" stroke-width="0.8" stroke-dasharray="4 3"/>
+  <line x1="950"  y1="64" x2="950"  y2="2020" stroke="#993C1D" stroke-width="0.8" stroke-dasharray="4 3"/>
+  <line x1="1090" y1="64" x2="1090" y2="2020" stroke="#185FA5" stroke-width="0.8" stroke-dasharray="4 3"/>
+  <line x1="1230" y1="64" x2="1230" y2="2020" stroke="#534AB7" stroke-width="0.8" stroke-dasharray="4 3"/>
+  <line x1="1385" y1="64" x2="1385" y2="2020" stroke="#534AB7" stroke-width="0.8" stroke-dasharray="4 3"/>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- ── BROWSE & SELECT phase ── -->
+
+  <!-- 1: Customer → App: open application  y=160 -->
+  <line x1="80" y1="165" x2="212" y2="165" stroke="#444" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="146" y="160" text-anchor="middle" font-size="10" fill="#333">open application</text>
+
+  <!-- 2: App → AppView: start()  y=200 -->
+  <line x1="220" y1="200" x2="362" y2="200" stroke="#0F6E56" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="291" y="195" text-anchor="middle" font-size="10" fill="#0F6E56">start(primaryStage)</text>
+
+  <!-- 3: AppView → UIController: new UIController + showMenu()  y=235 -->
+  <line x1="370" y1="235" x2="502" y2="235" stroke="#0F6E56" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="436" y="230" text-anchor="middle" font-size="10" fill="#0F6E56">new UIController / showMenu()</text>
+
+  <!-- 4: UIController → MenuView: build(categories)  y=270 -->
+  <line x1="510" y1="270" x2="632" y2="270" stroke="#0F6E56" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="571" y="265" text-anchor="middle" font-size="10" fill="#0F6E56">build(categories)</text>
+
+  <!-- 5: MenuView → UIController: return Node  y=305 -->
+  <line x1="640" y1="305" x2="518" y2="305" stroke="#0F6E56" stroke-width="1" stroke-dasharray="5 3" marker-end="url(#arrd)"/>
+  <text x="579" y="300" text-anchor="middle" font-size="10" fill="#0F6E56">return Node</text>
+
+  <!-- 6: Customer → UIController: select category  y=345 -->
+  <line x1="80" y1="348" x2="502" y2="348" stroke="#444" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="291" y="343" text-anchor="middle" font-size="10" fill="#333">select category</text>
+
+  <!-- 7: UIController → CategoryPageView: build(category, products)  y=375 -->
+  <line x1="510" y1="378" x2="782" y2="378" stroke="#0F6E56" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="646" y="373" text-anchor="middle" font-size="10" fill="#0F6E56">showCategory(category)</text>
+
+  <!-- ── PRODUCT DETAILS & CUSTOMISE phase ── -->
+
+  <!-- 8: Customer → CategoryPageView: select product  y=435 -->
+  <line x1="80" y1="438" x2="782" y2="438" stroke="#444" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="431" y="433" text-anchor="middle" font-size="10" fill="#333">select product</text>
+
+  <!-- 9: UIController → CategoryPageView: showProductDialog(owner, cat, product)  y=473 -->
+  <line x1="510" y1="476" x2="782" y2="476" stroke="#0F6E56" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="646" y="471" text-anchor="middle" font-size="10" fill="#0F6E56">showProductDialog() [static]</text>
+
+  <!-- 10: CategoryPageView self: build dialog UI (name/desc/price/add-ons)  y=513 -->
+  <path d="M790 513 Q855 513 855 528 Q855 543 790 543" fill="none" stroke="#534AB7" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="875" y="530" text-anchor="start" font-size="10" fill="#534AB7">build dialog UI</text>
+
+  <!-- 11: Customer → CategoryPageView: [opt] select add-ons  y=570 -->
+  <line x1="80" y1="573" x2="782" y2="573" stroke="#888" stroke-width="1" stroke-dasharray="5 3" marker-end="url(#arrd)"/>
+  <text x="431" y="568" text-anchor="middle" font-size="10" fill="#888">[opt] select add-ons</text>
+
+  <!-- 12: CategoryPageView self: update price  y=607 -->
+  <path d="M790 607 Q850 607 850 622 Q850 637 790 637" fill="none" stroke="#534AB7" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="870" y="624" text-anchor="start" font-size="10" fill="#534AB7">update price</text>
+
+  <!-- 13: Customer → CategoryPageView: click Add to Cart  y=660 -->
+  <line x1="80" y1="663" x2="782" y2="663" stroke="#444" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="431" y="658" text-anchor="middle" font-size="10" fill="#333">click Add to Cart</text>
+
+  <!-- 14: CategoryPageView → Cart: addProduct(product)  y=697 -->
+  <line x1="790" y1="700" x2="942" y2="700" stroke="#993C1D" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="866" y="695" text-anchor="middle" font-size="10" fill="#993C1D">addProduct(product)</text>
+
+  <!-- alt: close dialog -->
+  <rect x="20" y="728" width="1460" height="30" rx="4" fill="none" stroke="#aaa" stroke-width="0.8" stroke-dasharray="4 3"/>
+  <text x="28" y="747" font-size="10" font-weight="600" fill="#888">[alt] close dialog without adding → return to browse</text>
+
+  <!-- ── CART phase ── -->
+
+  <!-- 15: Customer → AppView: open cart (click Cart button)  y=800 -->
+  <line x1="80" y1="803" x2="362" y2="803" stroke="#444" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="221" y="798" text-anchor="middle" font-size="10" fill="#333">click Cart button</text>
+
+  <!-- 16: AppView → Cart: getItems() / getTotalPrice()  y=835 -->
+  <line x1="370" y1="838" x2="942" y2="838" stroke="#993C1D" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="656" y="833" text-anchor="middle" font-size="10" fill="#993C1D">getItems() / getTotalPrice()</text>
+
+  <!-- 17: AppView → Customer: show cart modal (summary + total)  y=868 -->
+  <line x1="370" y1="871" x2="88" y2="871" stroke="#0F6E56" stroke-width="1" stroke-dasharray="5 3" marker-end="url(#arrd)"/>
+  <text x="229" y="866" text-anchor="middle" font-size="10" fill="#0F6E56">cart modal (summary + total)</text>
+
+  <!-- alt: clear cart -->
+  <rect x="20" y="890" width="1460" height="30" rx="4" fill="none" stroke="#aaa" stroke-width="0.8" stroke-dasharray="4 3"/>
+  <text x="28" y="909" font-size="10" font-weight="600" fill="#888">[alt] clear cart → Cart.clear() + OrderManager.resetCurrentOrder()</text>
+
+  <!-- 18: Customer → AppView: click Order Now  y=935 -->
+  <line x1="80" y1="938" x2="362" y2="938" stroke="#444" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="221" y="933" text-anchor="middle" font-size="10" fill="#333">click Order Now</text>
+
+  <!-- guard -->
+  <rect x="20" y="955" width="1460" height="24" rx="4" fill="none" stroke="#aaa" stroke-width="0.8" stroke-dasharray="4 3"/>
+  <text x="28" y="971" font-size="10" font-weight="600" fill="#888">[guard] cart not empty (Order Now disabled if empty)</text>
+
+  <!-- ── ORDER PROCESSING phase ── -->
+
+  <!-- 19: AppView → OrderManager: prepareOrder(items)  y=1020 -->
+  <line x1="370" y1="1023" x2="1082" y2="1023" stroke="#185FA5" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="726" y="1017" text-anchor="middle" font-size="10" fill="#185FA5">prepareOrder(items)</text>
+
+  <!-- 20: OrderManager → Order: new Order + addProduct(each)  y=1058 -->
+  <line x1="1090" y1="1058" x2="1090" y2="1058" stroke="#185FA5" stroke-width="1.2"/>
+  <!-- self loop for OrderManager creating Order internally -->
+  <path d="M1090 1058 Q1140 1058 1140 1073 Q1140 1088 1090 1088" fill="none" stroke="#185FA5" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="1150" y="1075" text-anchor="start" font-size="10" fill="#185FA5">new Order(items) [internal]</text>
+
+  <!-- 21a: AppView → OrderManager: attachObserver(GUIObserver)  y=1115 -->
+  <line x1="370" y1="1118" x2="1082" y2="1118" stroke="#534AB7" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="726" y="1112" text-anchor="middle" font-size="10" fill="#534AB7">attachObserver(GUIObserver)</text>
+
+  <!-- 21b: OrderManager → Order: addObserver(GUIObserver)  y=1148 -->
+  <path d="M1090 1148 Q1145 1148 1145 1163 Q1145 1178 1090 1178" fill="none" stroke="#534AB7" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="1155" y="1165" text-anchor="start" font-size="10" fill="#534AB7">addObserver(gui)</text>
+
+  <!-- 22a: AppView → OrderManager: attachObserver(TerminalObserver)  y=1200 -->
+  <line x1="370" y1="1203" x2="1082" y2="1203" stroke="#534AB7" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="726" y="1197" text-anchor="middle" font-size="10" fill="#534AB7">attachObserver(TerminalObserver)</text>
+
+  <!-- 22b: OrderManager → Order: addObserver(TerminalObserver)  y=1230 -->
+  <path d="M1090 1233 Q1145 1233 1145 1248 Q1145 1263 1090 1263" fill="none" stroke="#534AB7" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="1155" y="1250" text-anchor="start" font-size="10" fill="#534AB7">addObserver(terminal)</text>
+
+  <!-- 23: AppView → OrderManager: startCurrentOrder()  y=1285 -->
+  <line x1="370" y1="1288" x2="1082" y2="1288" stroke="#185FA5" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="726" y="1282" text-anchor="middle" font-size="10" fill="#185FA5">startCurrentOrder()</text>
+
+  <!-- 24: OrderManager → Order: confirm()  y=1323 -->
+  <line x1="1090" y1="1323" x2="1090" y2="1323" stroke="#185FA5" stroke-width="1.2"/>
+  <!-- note: Order is internal to OrderManager now; show as self-call -->
+  <path d="M1090 1323 Q1145 1323 1145 1338 Q1145 1353 1090 1353" fill="none" stroke="#185FA5" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="1155" y="1340" text-anchor="start" font-size="10" fill="#185FA5">currentOrder.confirm()</text>
+
+  <!-- 25: Order notifies → GUIObserver  y=1378 -->
+  <line x1="1090" y1="1381" x2="1222" y2="1381" stroke="#534AB7" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="1156" y="1375" text-anchor="middle" font-size="10" fill="#534AB7">notify(ORDER_CONFIRMED)</text>
+  <!-- 26: Order notifies → TerminalObserver  y=1398 -->
+  <line x1="1090" y1="1401" x2="1377" y2="1401" stroke="#534AB7" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="1233" y="1395" text-anchor="middle" font-size="10" fill="#534AB7">notify(ORDER_CONFIRMED)</text>
+
+  <!-- GUIObserver self: update progress bar 0.33  -->
+  <path d="M1230 1420 Q1280 1420 1280 1435 Q1280 1450 1230 1450" fill="none" stroke="#534AB7" stroke-width="1" marker-end="url(#arr)"/>
+  <text x="1292" y="1437" text-anchor="start" font-size="10" fill="#534AB7">update bar (0.33)</text>
+
+  <!-- TerminalObserver self: log confirmed  -->
+  <path d="M1385 1465 Q1435 1465 1435 1480 Q1435 1495 1385 1495" fill="none" stroke="#534AB7" stroke-width="1" marker-end="url(#arr)"/>
+  <text x="1447" y="1482" text-anchor="start" font-size="10" fill="#534AB7">log: confirmed</text>
+
+  <!-- delay band -->
+  <rect x="1060" y="1512" width="420" height="22" rx="4" fill="#e8e8e8" opacity="0.7"/>
+  <text x="1270" y="1527" text-anchor="middle" font-size="10" fill="#666">⏱ delay 10 s</text>
+
+  <!-- preparationDone -->
+  <path d="M1090 1548 Q1145 1548 1145 1563 Q1145 1578 1090 1578" fill="none" stroke="#185FA5" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="1155" y="1565" text-anchor="start" font-size="10" fill="#185FA5">currentOrder.preparationDone()</text>
+
+  <line x1="1090" y1="1598" x2="1222" y2="1598" stroke="#534AB7" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="1156" y="1592" text-anchor="middle" font-size="10" fill="#534AB7">notify(PREPARATION_DONE)</text>
+  <line x1="1090" y1="1618" x2="1377" y2="1618" stroke="#534AB7" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="1233" y="1612" text-anchor="middle" font-size="10" fill="#534AB7">notify(PREPARATION_DONE)</text>
+
+  <path d="M1230 1638 Q1280 1638 1280 1653 Q1280 1668 1230 1668" fill="none" stroke="#534AB7" stroke-width="1" marker-end="url(#arr)"/>
+  <text x="1292" y="1655" text-anchor="start" font-size="10" fill="#534AB7">update bar (0.66)</text>
+
+  <path d="M1385 1683 Q1435 1683 1435 1698 Q1435 1713 1385 1713" fill="none" stroke="#534AB7" stroke-width="1" marker-end="url(#arr)"/>
+  <text x="1447" y="1700" text-anchor="start" font-size="10" fill="#534AB7">log: preparation done</text>
+
+  <!-- delay band 2 -->
+  <rect x="1060" y="1730" width="420" height="22" rx="4" fill="#e8e8e8" opacity="0.7"/>
+  <text x="1270" y="1745" text-anchor="middle" font-size="10" fill="#666">⏱ delay 5 s</text>
+
+  <!-- serviceDone -->
+  <path d="M1090 1765 Q1145 1765 1145 1780 Q1145 1795 1090 1795" fill="none" stroke="#185FA5" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="1155" y="1782" text-anchor="start" font-size="10" fill="#185FA5">currentOrder.serviceDone()</text>
+
+  <line x1="1090" y1="1815" x2="1222" y2="1815" stroke="#534AB7" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="1156" y="1809" text-anchor="middle" font-size="10" fill="#534AB7">notify(SERVICE_DONE)</text>
+  <line x1="1090" y1="1835" x2="1377" y2="1835" stroke="#534AB7" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="1233" y="1829" text-anchor="middle" font-size="10" fill="#534AB7">notify(SERVICE_DONE)</text>
+
+  <path d="M1230 1855 Q1280 1855 1280 1870 Q1280 1885 1230 1885" fill="none" stroke="#534AB7" stroke-width="1" marker-end="url(#arr)"/>
+  <text x="1292" y="1872" text-anchor="start" font-size="10" fill="#534AB7">update bar (1.0)</text>
+
+  <path d="M1385 1900 Q1435 1900 1435 1915 Q1435 1930 1385 1930" fill="none" stroke="#534AB7" stroke-width="1" marker-end="url(#arr)"/>
+  <text x="1447" y="1917" text-anchor="start" font-size="10" fill="#534AB7">log: service done</text>
+
+  <!-- ServiceDoneObserver → Cart.clear() + OrderManager.resetCurrentOrder() (via Platform.runLater in AppView) -->
+  <!-- 27: AppView → Cart: clear()  y=1948 -->
+  <line x1="370" y1="1951" x2="942" y2="1951" stroke="#993C1D" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="656" y="1945" text-anchor="middle" font-size="10" fill="#993C1D">Cart.clear() [via ServiceDoneObserver]</text>
+
+  <!-- 28: AppView → OrderManager: resetCurrentOrder()  y=1978 -->
+  <line x1="370" y1="1981" x2="1082" y2="1981" stroke="#185FA5" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="726" y="1975" text-anchor="middle" font-size="10" fill="#185FA5">resetCurrentOrder()</text>
+
+  <!-- End markers -->
+  <circle cx="80"   cy="2010" r="7" fill="none" stroke="#888" stroke-width="1.5"/>
+  <circle cx="80"   cy="2010" r="4" fill="#888"/>
+  <circle cx="220"  cy="2010" r="7" fill="none" stroke="#0F6E56" stroke-width="1.5"/>
+  <circle cx="220"  cy="2010" r="4" fill="#0F6E56"/>
+  <circle cx="370"  cy="2010" r="7" fill="none" stroke="#0F6E56" stroke-width="1.5"/>
+  <circle cx="370"  cy="2010" r="4" fill="#0F6E56"/>
+  <circle cx="510"  cy="2010" r="7" fill="none" stroke="#0F6E56" stroke-width="1.5"/>
+  <circle cx="510"  cy="2010" r="4" fill="#0F6E56"/>
+  <circle cx="640"  cy="2010" r="7" fill="none" stroke="#0F6E56" stroke-width="1.5"/>
+  <circle cx="640"  cy="2010" r="4" fill="#0F6E56"/>
+  <circle cx="790"  cy="2010" r="7" fill="none" stroke="#0F6E56" stroke-width="1.5"/>
+  <circle cx="790"  cy="2010" r="4" fill="#0F6E56"/>
+  <circle cx="950"  cy="2010" r="7" fill="none" stroke="#993C1D" stroke-width="1.5"/>
+  <circle cx="950"  cy="2010" r="4" fill="#993C1D"/>
+  <circle cx="1090" cy="2010" r="7" fill="none" stroke="#185FA5" stroke-width="1.5"/>
+  <circle cx="1090" cy="2010" r="4" fill="#185FA5"/>
+  <circle cx="1230" cy="2010" r="7" fill="none" stroke="#534AB7" stroke-width="1.5"/>
+  <circle cx="1230" cy="2010" r="4" fill="#534AB7"/>
+  <circle cx="1385" cy="2010" r="7" fill="none" stroke="#534AB7" stroke-width="1.5"/>
+  <circle cx="1385" cy="2010" r="4" fill="#534AB7"/>
+
+  <!-- Legend -->
+  <rect x="20" y="2030" width="980" height="46" rx="6" fill="none" stroke="#ddd" stroke-width="0.8"/>
+  <line x1="36" y1="2046" x2="72" y2="2046" stroke="#444" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="78" y="2050" font-size="10" fill="#444">sync call</text>
+  <line x1="155" y1="2046" x2="191" y2="2046" stroke="#888" stroke-width="1" stroke-dasharray="5 3" marker-end="url(#arrd)"/>
+  <text x="197" y="2050" font-size="10" fill="#666">return / async</text>
+  <line x1="310" y1="2046" x2="346" y2="2046" stroke="#888" stroke-width="1" stroke-dasharray="5 3" marker-end="url(#arrd)"/>
+  <text x="352" y="2050" font-size="10" fill="#888">[dashed] optional</text>
+  <rect x="470" y="2038" width="14" height="14" rx="2" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="490" y="2050" font-size="10" fill="#0F6E56">browse/UI</text>
+  <rect x="560" y="2038" width="14" height="14" rx="2" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+  <text x="580" y="2050" font-size="10" fill="#534AB7">observer</text>
+  <rect x="640" y="2038" width="14" height="14" rx="2" fill="#FAECE7" stroke="#993C1D" stroke-width="0.8"/>
+  <text x="660" y="2050" font-size="10" fill="#993C1D">cart</text>
+  <rect x="700" y="2038" width="14" height="14" rx="2" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.8"/>
+  <text x="720" y="2050" font-size="10" fill="#185FA5">order</text>
+
+  <text x="36" y="2068" font-size="10" fill="#888">Solid line = synchronous message   Dashed line = return / async notification   Self-loop = internal operation</text>
+</svg>
